@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-puts "Wee"
+puts "Wee aa"
 exit 0
