@@ -30,7 +30,7 @@ jobs:
         ruby-version: '2.7'
     
     - name: Current branch
-      run: echo ${GITHUB_REF##*/}
+      run: echo "${GITHUB_REF##*/}"
 
     - name: Updates last editted comments
       run: ruby dateme.rb
