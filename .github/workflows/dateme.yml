@@ -31,13 +31,13 @@ jobs:
     - run: ruby dateme.rb
 
     - name: switching from HTTPS to SSH
-      run: git remote set-url origin git@github.com/marcelo-lipienski/dateme
+    - run: git remote set-url origin git@github.com/marcelo-lipienski/dateme
 
     - name: stage changed files
-      run: git add .
+    - run: git add .
 
     - name: commit changed files
-      run: git commit -m "Autoupdating last edited date on comments."
+    - run: git commit -m "Autoupdating last edited date on comments."
       
     - name: push changed files
-      run: git push origin ${GITHUB_REF##*/}
+    - run: git push origin ${GITHUB_REF##*/}
