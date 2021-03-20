@@ -31,6 +31,11 @@ jobs:
         
     - name: Updates last editted comments
       run: ruby dateme.rb
+      
+    - name: Setup git
+      run: |
+        git config --global user.name "DateMe bot"
+        git config --global user.email "dateme@nowhere.com"
 
     - name: switching from HTTPS to SSH
       run: git remote set-url origin git@github.com/marcelo-lipienski/dateme
