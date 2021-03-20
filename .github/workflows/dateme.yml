@@ -40,7 +40,7 @@ jobs:
     - name: switching from HTTPS to SSH
       run: git remote set-url origin git@github.com/marcelo-lipienski/dateme
 
-    - name: stage changed files
+    - name: stage changed files ${GITHUB_REF##*/}
       run: git add .
 
     - name: commit changed files
